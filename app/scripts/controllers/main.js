@@ -15,13 +15,8 @@ angular.module('mytodoApp')
     	localStorageService.set('todos', $scope.todos);
     }, true);
     $scope.addTodo = function() {
-    	console.log("Adding TODO");
-
     	for(var item in $scope.todos) {
-    		console.log(item + " item");
-    		console.log($scope.todo + " in for loop");
     		if($scope.todos[item] == $scope.todo) {
-    			console.log($scope.todo +" Todo already present");
     			alert($scope.todo +":  Todo already present");
     			return;
     		}
